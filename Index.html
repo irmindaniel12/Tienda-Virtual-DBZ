@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shop DBZ</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="text-center">
+        <h1>Bienvenido a mi tienda virtual</h1>
+    </div>
+
+    <section class="shop js-shop">
+        <!-- Articulo 1 -->
+        <article class="item">
+            <!-- Encabezado -->
+            <header class="item__header">
+                <h2 class="item__name">Master Roshi Kame House Relax</h2>
+            </header>
+
+            <!-- Imagen -->
+            <img src="https://cdn.shopify.com/s/files/1/0976/8592/products/DBZ_Master_Roshi_s_Kame_House_Relax_Vibe_Concept_Graphic_Shorts_180x180_crop_center.jpg?v=1546298643"
+                alt="Crawdad" title="Crawdad" class="item_img">
+
+            <!-- Descripcion -->
+            <p class="item_description">Perfecto para la playa </p>
+
+            <!-- Precios -->
+            <div class="item__money-container">
+                <span class="item__precio">$450</span>
+                <span class="item__cost" id="Costo1">$0.00</span>
+            </div>
+
+            <!-- Botones -->
+            <div class="item__count-container">
+                <button class="item__remove js-remove" onclick="tirar(450)">-</button>
+                <span class="item__count" id="Contador1">0</span>
+                <button class="item__add js-add" onclick="comprar(450)">+</button>
+            </div>
+        </article>
+
+        <!-- Articulo 2-->
+        <article class="item">
+            <!-- Encabezado -->
+            <header class="item__header">
+                <h2 class="item__name">Playera Mamalona de Vegeta</h2>
+
+            </header>
+
+            <!-- Imagen -->
+            <img src="https://cdn.shopify.com/s/files/1/0976/8592/products/99f302f85b705e2145c191fe2376679a_180x180_crop_center.png?v=1557131841"
+                alt="Crawdad" title="Crawdad" class="item_img">
+
+            <!-- Descripcion -->
+            <p class="item_description">Perfecto para el gym </p>
+
+            <!-- Precios -->
+            <div class="item__money-container">
+                <span class="item__precio">$350</span>
+                <span class="item__cost" id="Costo2">$0.00</span>
+            </div>
+
+
+            <!-- Botones -->
+            <div class="item__count-container">
+                <button class="item__remove js-remove" onclick="tirar(350)">-</button>
+                <span class="item__count" id="Contador2">0</span>
+                <button class="item__add js-add" onclick="comprar(350)">+</button>
+            </div>
+        </article>
+
+        <!-- Articulo 3-->
+        <article class="item">
+            <!-- Encabezado -->
+            <header class="item__header">
+                <h2 class="item__name">Mochila Escolar para nenes</h2>
+
+            </header>
+
+            <!-- Imagen -->
+            <img src="https://cdn.shopify.com/s/files/1/0976/8592/files/16QLZ40-min_180x180_crop_center.jpg?v=1547191340"
+                alt="Crawdad" title="Crawdad" class="item_img">
+
+            <!-- Descripcion -->
+            <p class="item_description">Perfecto para la escuela </p>
+
+            <!-- Precios -->
+            <div class="item__money-container">
+                <span class="item__precio">$150</span>
+                <span class="item__cost"  id="Costo3">$0.00</span>
+            </div>
+
+            <!-- Botones -->
+            <div class="item__count-container">
+                <button class="item__remove js-remove" onclick="tirar(150)">-</button>
+                <span class="item__count" id="Contador3">0</span>
+                <button class="item__add js-add" onclick="comprar(150)">+</button>
+            </div>
+        </article>
+    </section>
+</body>
+<script src="js/comprar.js"></script>
+
+</html>
